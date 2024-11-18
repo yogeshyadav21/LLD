@@ -1,5 +1,6 @@
 package org.example;
 
+
 import org.example.lld.atm.Atm;
 import org.example.lld.atm.AtmController;
 import org.example.lld.parkingLot.Entity.Vehicle;
@@ -9,6 +10,7 @@ import org.example.lld.parkingLot.Exit;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

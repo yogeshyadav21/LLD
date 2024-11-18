@@ -2,9 +2,12 @@ package org.example.lld.parkingLot;
 
 import org.example.lld.parkingLot.Entity.Ticket;
 import org.example.lld.parkingLot.Entity.Vehicle;
+import org.example.lld.parkingLot.Entity.VehicleType;
 import org.example.lld.parkingLot.parkinglotManager.ParkingLotManager;
 import org.example.lld.parkingLot.parkinglotManager.ParkingLotManagerFactory;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class Entrance {
@@ -18,4 +21,17 @@ public class Entrance {
         }
         return new Ticket(parkingId, vehicle);
     }
+
+
+//      ParkingLot SampleCode
+//    Entrance entrance = new Entrance();
+//    Exit exit = new Exit();
+//    List<Vehicle> vehicles = new ArrayList<>();
+//        for(int i = 0; i < 5; i++)
+//            vehicles.add(new Vehicle((int) (Math.random()*10000), VehicleType.TWO_WHEELER));
+//
+//        for(int i = 0; i < 6; i++)
+//            vehicles.add(new Vehicle((int) (Math.random()*10000), VehicleType.FOUR_WHEELER));
+//
+//        vehicles.forEach(entrance::getTicket);
 }
