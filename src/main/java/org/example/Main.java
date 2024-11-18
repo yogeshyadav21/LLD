@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.lld.atm.Atm;
+import org.example.lld.atm.AtmController;
 import org.example.lld.parkingLot.Entity.Vehicle;
 import org.example.lld.parkingLot.Entity.VehicleType;
 import org.example.lld.parkingLot.Entrance;
@@ -14,17 +16,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Entrance entrance = new Entrance();
-        Exit exit = new Exit();
-        List<Vehicle> vehicles = new ArrayList<>();
-        for(int i = 0; i < 5; i++)
-            vehicles.add(new Vehicle((int) (Math.random()*10000), VehicleType.TWO_WHEELER));
-
-        for(int i = 0; i < 6; i++)
-            vehicles.add(new Vehicle((int) (Math.random()*10000), VehicleType.FOUR_WHEELER));
-
-        vehicles.forEach(entrance::getTicket);
-
+        AtmController atmController = new AtmController();
 
     }
 }
