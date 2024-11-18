@@ -1,9 +1,8 @@
 package org.example;
 
-import org.example.lld.elevator.Display;
-import org.example.lld.elevator.enums.Direction;
-import org.example.lld.elevator.externalButton.AnyLift;
-import org.example.lld.elevator.externalButton.ExternalButtonDispatcher;
+
+import org.example.lld.atm.Atm;
+import org.example.lld.atm.AtmController;
 import org.example.lld.parkingLot.Entity.Vehicle;
 import org.example.lld.parkingLot.Entity.VehicleType;
 import org.example.lld.parkingLot.Entrance;
@@ -18,9 +17,8 @@ import java.util.UUID;
 public class Main {
     public static void main(String[] args) {
 
-        Display display = new Display(UUID.randomUUID(), 3, Direction.UP);
-        ExternalButtonDispatcher  externalButtonDispatcher = new AnyLift(UUID.randomUUID(), )
 
+        AtmController atmController = new AtmController();
 
     }
 }
